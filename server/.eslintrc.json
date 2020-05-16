@@ -1,23 +1,19 @@
 {
     "env": {
-        "es6": true,
-        "node": true
+        "node": true,
+        "jest": true
     },
-    "extends": [
-        "plugin:vue/essential",
-        "standard"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
+    "extends": ["airbnb-base", "plugin:jest/recommended", "plugin:security/recommended", "plugin:prettier/recommended"],
+    "plugins": ["jest", "security", "prettier"],
     "parserOptions": {
-        "ecmaVersion": 11,
-        "sourceType": "module"
+        "ecmaVersion": 2018
     },
-    "plugins": [
-        "vue"
-    ],
     "rules": {
+        "no-console": "error",
+        "func-names": "off",
+        "no-underscore-dangle": "off",
+        "consistent-return": "off",
+        "jest/expect-expect": "off",
+        "security/detect-object-injection": "off"
     }
 }
