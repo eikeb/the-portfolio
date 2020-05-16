@@ -1,3 +1,4 @@
+const { describe, expect } = require('@jest/globals');
 const httpStatus = require('http-status');
 const httpMocks = require('node-mocks-http');
 const { errorConverter, errorHandler } = require('../../../src/middlewares/error');

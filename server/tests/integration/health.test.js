@@ -1,5 +1,7 @@
+const { describe, expect } = require('@jest/globals');
 const request = require('supertest');
 const httpStatus = require('http-status');
+
 const app = require('../../src/app');
 const setupTestDB = require('../utils/setupTestDB');
 
