@@ -4,7 +4,7 @@ const config = require('../config/config');
 const swaggerDef = {
   openapi: '3.0.0',
   info: {
-    title: 'the-portfolio API documentation',
+    title: 'the:portfolio API documentation',
     version,
     license: {
       name: 'MIT',

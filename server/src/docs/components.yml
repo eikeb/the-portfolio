@@ -47,6 +47,24 @@ components:
         message:
           type: string
 
+    Healthcheck:
+      type: object
+      properties:
+        uptime:
+          type: integer
+        mongoDb:
+          type: string
+          enum: [disconnected, connected, connecting, disconnecting, unauthorized, uninitialized]
+        timestamp:
+          type: integer
+        message:
+          type: string
+      example:
+        uptime: 206.059281201
+        mongoDb: connected
+        timestamp: 1589659926639
+        message: OK
+
   responses:
     DuplicateEmail:
       description: Email already taken
