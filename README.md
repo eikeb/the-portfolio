@@ -1,4 +1,4 @@
-# the:portfolio
+# the:portfolio - A modern portfolio analysis tool
 
 ## Technology Stack
 
